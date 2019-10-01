@@ -1,0 +1,33 @@
+@import 'assets';
+@import '~react-image-gallery/styles/css/image-gallery.css';
+
+.grid-gallery-holder {
+    display: block;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .grid-gallery-holder {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .grid-gallery-holder {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .grid-gallery-holder {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .grid-gallery-holder {
+        width: 250px;
+    }
+}

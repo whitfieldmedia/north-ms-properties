@@ -1,0 +1,49 @@
+@import 'assets';
+
+.description-page {
+    width: 100%;
+    height: auto;
+    margin: 130px 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.description-header {
+    font-family: $serif;
+    font-size: 40px;
+    color: $dark;
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 20px 0 0 0;
+    width: auto;
+    border-bottom: 2px solid $dark;
+}
+
+.description-holder {
+    width: 90%;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.description-header2 {
+    font-family: $sans;
+    font-size: 25px;
+    color: $dark;
+    text-align: left;
+    margin: 0;
+    padding: 40px 0 10px 0;
+}
+
+.description-par {
+    font-family: $body;
+    font-size: 20px;
+    color: $gray;
+    margin: 0;
+    padding: 10px 0;
+}

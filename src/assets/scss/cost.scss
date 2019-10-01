@@ -1,0 +1,115 @@
+@import 'assets';
+
+.cost-section {
+    margin: 125px 0 75px 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cost-header {
+    font-family: $serif;
+    font-size: 35px;
+    color: $dark;
+    text-align: center;
+    margin: 10px 0 30px 0;
+    padding: 0;
+}
+
+.cost-grid {
+    display: flex;
+    flex-flow: column;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 75%;
+}
+
+.cost-row {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    justify-items: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.cost-header3 {
+    font-family: $sans;
+    font-size: 20px;
+    color: $dark;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.cost-par {
+    font-family: $body;
+    font-size: 18px;
+    color: $gray;
+    margin: 0;
+    padding: 0;
+}
+
+.light {
+    background: #f2f2f2;
+}
+.dark {
+    background: #e8e8e8;
+}
+td {
+    font-family: $body;
+    font-size: 18px;
+    color: $gray;
+    padding: 10px 20px;
+}
+th {
+    font-family: $sans;
+    font-size: 18px;
+    color: $dark;
+    padding: 10px 20px;
+    text-align: left;
+}
+.cost-table-header {
+    font-family: $serif;
+    font-size: 20px;
+    color: $dark;
+}
+.small-table {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    th {
+        font-size: 16px;
+    }
+    td {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .big-table {
+        display: none;
+    }
+    .small-table {
+        display: block;
+    }
+
+    .light {
+        background: #f2f2f2;
+    }
+    .dark {
+        background: #e8e8e8;
+    }
+}

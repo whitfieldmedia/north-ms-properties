@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500|Oxygen|Playfair+Display:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alegreya|Cormorant&display=swap");
+.home-page {
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - 110px);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 0;
+  padding-top: 100px;
+}
+
+.home-header {
+  position: relative;
+  color: #3e3e3e;
+  font-family: "Cormorant", serif;
+  font-size: 45px;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  width: auto;
+  z-index: 2;
+}
+
+#home-video {
+  width: 50vw;
+  height: 28vw;
+  max-width: 700px;
+  max-height: 394px;
+  min-width: 300px;
+  min-height: 168.75px;
+  display: block;
+  margin: 25px auto;
+  border: 2px solid #3e3e3e;
+  z-index: 2;
+}
+
+.home-address-link {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 25px;
+  color: #5D5C61;
+  text-decoration: none;
+  text-align: center;
+  margin: 7px auto;
+  padding: 0;
+  z-index: 2;
+  font-weight: 500;
+}
+
+.home-address-link:hover {
+  color: #7395AE;
+  text-decoration: underline;
+}
+
+.home-button-row {
+  width: 500px;
+  max-width: 90%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  justify-items: space-evenly;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+.home-contact-button {
+  width: 200px;
+  height: 45px;
+  border-radius: 25px;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 20px;
+  color: #f5f7f6;
+  background: #557A95;
+  font-weight: 500;
+  margin: 15px auto;
+  transition: all 0.3s ease;
+  line-height: 20px;
+}
+.home-contact-button i {
+  padding-left: 10px;
+}
+
+.home-contact-button:hover {
+  line-height: 20px;
+  transform: scale(1.05);
+  box-shadow: 1px 1px 5px rgba(93, 92, 97, 0.2);
+}
+
+@media only screen and (max-width: 1000px) {
+  #home-video {
+    width: 90vw;
+    height: 50.625vw;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home-header {
+    font-size: 40px;
+  }
+
+  .home-address-link {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home-header {
+    font-size: 35px;
+  }
+
+  .home-address-link {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .home-header {
+    font-size: 30px;
+  }
+
+  .home-address-link {
+    width: 250px;
+  }
+
+  .home-button-row {
+    display: flex;
+    flex-flow: column;
+    margin-top: 10px;
+  }
+
+  .home-contact-button {
+    margin: 5px auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #home-video {
+    width: 99vw;
+    height: 56vw;
+  }
+
+  .home-header {
+    font-size: 25px;
+    margin: 15px auto;
+  }
+
+  .home-address-link {
+    margin: 10px auto;
+  }
+
+  .home-contact-button {
+    margin: 10px auto;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

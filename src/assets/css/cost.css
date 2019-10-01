@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500|Oxygen|Playfair+Display:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alegreya|Cormorant&display=swap");
+.cost-section {
+  margin: 125px 0 75px 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.cost-header {
+  font-family: "Cormorant", serif;
+  font-size: 35px;
+  color: #5D5C61;
+  text-align: center;
+  margin: 10px 0 30px 0;
+  padding: 0;
+}
+
+.cost-grid {
+  display: flex;
+  flex-flow: column;
+  justify-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 75%;
+}
+
+.cost-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  justify-items: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.cost-header3 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 20px;
+  color: #5D5C61;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.cost-par {
+  font-family: "Oxygen", sans-serif;
+  font-size: 18px;
+  color: #938E94;
+  margin: 0;
+  padding: 0;
+}
+
+.light {
+  background: #f2f2f2;
+}
+
+.dark {
+  background: #e8e8e8;
+}
+
+td {
+  font-family: "Oxygen", sans-serif;
+  font-size: 18px;
+  color: #938E94;
+  padding: 10px 20px;
+}
+
+th {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 18px;
+  color: #5D5C61;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.cost-table-header {
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  color: #5D5C61;
+}
+
+.small-table {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  th {
+    font-size: 16px;
+  }
+
+  td {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .big-table {
+    display: none;
+  }
+
+  .small-table {
+    display: block;
+  }
+
+  .light {
+    background: #f2f2f2;
+  }
+
+  .dark {
+    background: #e8e8e8;
+  }
+}
+
+/*# sourceMappingURL=cost.css.map */
