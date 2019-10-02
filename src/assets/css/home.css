@@ -16,23 +16,10 @@
   background: #f5f7f6;
 }
 
-.home-header-container {
-  width: auto;
-  margin: 0 auto;
-  height: auto;
-  position: relative;
-  display: flex;
-  flex-flow: column;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
 .home-header {
   position: relative;
   color: #3e3e3e;
-  font-family: "Alegreya", serif;
+  font-family: "Cormorant", serif;
   font-size: 45px;
   text-align: center;
   padding: 120px 0 0 0;

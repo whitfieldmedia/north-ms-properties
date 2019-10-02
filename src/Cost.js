@@ -5,7 +5,7 @@ class Cost extends React.Component {
     render() {
         return (
             <div className="cost-section">
-                <h2 className="cost-header"> Cost Approach </h2>
+                <h2 className="cost-header"> Value of Cost Approach </h2>
                 <table className="big-table">
                     <tr className="light">
                         <th className="cost-table-header"> Item </th>

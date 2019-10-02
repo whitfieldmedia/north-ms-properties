@@ -16,23 +16,10 @@
     background: $white;
 }
 
-.home-header-container {
-    width: auto;
-    margin: 0 auto;
-    height: auto;
-    position: relative;
-    display: flex;
-    flex-flow: column;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
 .home-header {
     position: relative;
     color: $darker;
-    font-family: $serif2;
+    font-family: $serif;
     font-size: 45px;
     text-align: center;
     padding: 120px 0 0 0;
