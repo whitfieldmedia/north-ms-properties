@@ -26,7 +26,7 @@ class Contact extends React.Component {
                     <p className="contact-text">  (662) 417-2501 </p>
                     <p className="contact-text"> donnie@northmsproperties.com </p>
                     <p className="contact-par">
-                        If you're interested in this property and want to view the property or if you have any questions. Give me a call, shoot me an email or use the form below and I'll get back to you a.s.a.p!
+                        If you're interested in this property and want to view the property or if you have any questions. Give me a call or shoot me an email!
                     </p>
                 </div>
             </div>
