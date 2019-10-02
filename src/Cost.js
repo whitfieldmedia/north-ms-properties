@@ -1,5 +1,5 @@
 import React from 'react';
-import './assets/scss/cost.scss';
+import './assets/css/cost.css';
 
 class Cost extends React.Component {
     render() {

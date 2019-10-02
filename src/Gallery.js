@@ -58,7 +58,7 @@ import img33 from './assets/images/trailer_with_lake_winona_facility.png';
 import img34 from './assets/images/property_map_winona_facility.png';
 import img34Small from './assets/images/property_map_small_winona_facility.png';
 import ImageGallery from 'react-image-gallery';
-import './assets/scss/gallery.scss';
+import './assets/css/gallery.css';
 
 class Gallery extends React.Component {
     constructor() {

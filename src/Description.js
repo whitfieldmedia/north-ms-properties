@@ -1,6 +1,6 @@
 import React from 'react';
 import Gallery from './Gallery';
-import './assets/scss/description.scss';
+import './assets/css/description.css';
 
 class Description extends React.Component {
     render() {

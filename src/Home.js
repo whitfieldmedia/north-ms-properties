@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './assets/scss/home.scss';
+import './assets/css/home.css';
 
 class Home extends React.Component {
     componentDidMount() {
