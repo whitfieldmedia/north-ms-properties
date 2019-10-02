@@ -3,7 +3,7 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "North_Mississippi_Properties64.png",
+      "src": "favicon.png",
       "sizes": "64x64",
       "type": "image/png"
     },
