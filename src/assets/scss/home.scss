@@ -3,7 +3,7 @@
 .home-page {
     width: 100%;
     height: 100%;
-    min-height: calc(100vh - 110px);
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
@@ -13,20 +13,33 @@
     align-items: center;
     align-content: center;
     z-index: 0;
-    padding-top: 100px;
+    background: $white;
 }
 
+.home-header-container {
+    width: auto;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
 .home-header {
     position: relative;
     color: $darker;
-    font-family: $serif;
+    font-family: $serif2;
     font-size: 45px;
     text-align: center;
     padding: 0;
     margin: 0 auto;
     width: auto;
     z-index: 2;
+    text-shadow: 0px 0px 1px $dark;
 }
 
 #home-video {
@@ -45,7 +58,7 @@
 .home-address-link {
     font-family: $sans;
     font-size: 25px;
-    color: $dark;
+    color: $darker;
     text-decoration: none;
     text-align: center;
     margin: 7px auto;
@@ -85,6 +98,7 @@
     margin: 15px auto;
     transition: all .3s ease;
     line-height: 20px;
+    border: 1px solid $white;
     i {
         padding-left: 10px;
     }
