@@ -13,6 +13,13 @@
     z-index: 10;
     background: $dark;
 }
+
+.nav-logo {
+    height: 70px;
+    width: auto;
+    margin-top: 5px;
+}
+
 .nav-top-row {
     display: flex;
     flex-flow: row;
@@ -59,6 +66,7 @@
     justify-items: space-between;
     align-content: center;
     align-items: center;
+    z-index: 15;
 }
 .navbar span {
     display: none;
@@ -91,6 +99,7 @@
     align-items: center;
     align-content: center;
     list-style-type: none;
+    z-index: 15;
 }
 .nav-link-closed {
     margin: 0;
@@ -109,6 +118,7 @@
     padding: 0px 15px;
     margin: 0;
     list-style-type: none;
+    z-index: 15;
 }
 .nav-link {
     font-family: $sans;
@@ -123,11 +133,13 @@
 }
 
 .nav-dropdown-closed {
-    display: block;
+    display: none;
+    opacity: 0;
     position: absolute;
     height: auto;
-    top: 80px;
-    right: 0;
+    top: 84px;
+    right: 0px;
+    width: 225px;
     width: auto;
     background: $dark;
     height: auto;
@@ -139,13 +151,14 @@
     align-items: center;
     transform: translateX(100%);
     transition: all 0.3s ease;
+    z-index: -1;
 }
 .nav-dropdown {
-    display: block;
+    opacity: 1;
     position: absolute;
-    top: 80px;
-    right: 90px;
-    width: 250px;
+    top: 84px;
+    right: 0px;
+    width: 225px;
     background: $dark;
     height: auto;
     display: flex;
@@ -175,7 +188,7 @@
     text-decoration: none;
     list-style-type: none;
     text-align: center;
-    padding: 15px 20px;
+    padding: 15px;
 }
 .dropdown-link:hover {
     color: $blue;
@@ -235,9 +248,9 @@
         top: 236px;
     }
     .nav-dropdown {
-        right: 200px;
-        top: 236px;
-        width: 180px;
+        right: 0px;
+        top: 340px;
+        width: 200px;
         border-right: 1px solid $white;
     }
     .dropdown-link-holder {
@@ -349,18 +362,9 @@
     .nav-text-small {
         display: inline-block;
     }
-    .nav-dropdown {
-        width: 150px;
-    }
 }
 
 @media only screen and (max-width: 375px) {
-    .nav-link-container {
-        width: 180px;
-    }
-    .nav-dropdown {
-        right: 180px;
-    }
     #ham-menu {
         right: 15px;
     }
@@ -372,12 +376,5 @@
 @media only screen and (max-width: 350px) {
     .nav-header {
         font-size: 25px;
-    }
-    .nav-link-container {
-        width: 160px;
-    }
-    .nav-dropdown {
-        right: 160px;
-        width: 140px;
     }
 }

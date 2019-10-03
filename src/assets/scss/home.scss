@@ -17,19 +17,16 @@
 }
 
 .header-container {
-    width: 80%;
-    max-width: 1200px;
-    min-width: 290px;
-    margin: 150px auto 15px auto;
+    width: 100%;
+    margin: 105px 0 0 0;
     height: auto;
-    padding: 5px;
-    border-radius: 25px;
+    padding: 25px 0 5px 0;
     display: flex;
     flex-flow: column;
-    border-radius: 25px;
     background: $dBlue;
     position: relative;
     border: 1px solid $white;
+    box-shadow: 1px 0px 5px $dark;
 }
 .home-header-row {
     display: flex;
@@ -37,14 +34,6 @@
     justify-content: center;
     justify-items: center;
 }
-#home-logo {
-    position: absolute;
-    width: 125px;
-    height: 125px;
-    top: 15px;
-    left: 25px;
-}
-
 
 .header {
     font-family: $sans;
@@ -83,8 +72,7 @@
     min-width: 300px;
     min-height: 168.75px;
     display: block;
-    margin: 25px auto;
-    border: 2px solid $darker;
+    margin: 10px auto 25px auto;
     z-index: 2;
 }
 
@@ -145,11 +133,11 @@
 .home-bottom-section {
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;
-    justify-items: space-evenly;
+    justify-content: center;
+    justify-items: center;
     align-content: flex-start;
     align-items: flex-start;
-    margin: 0 auto;
+    margin: 25px auto 0 auto;
     padding-bottom: 75px;
     position: relative;
     height: auto;
@@ -165,15 +153,35 @@
     margin: 10px;
     width: auto;
     height: auto;
-    margin: 0 15px;
+    margin: 0;
     padding: 0 15px;
+}
+.home-gallery-container {
+    margin: 0;
+    padding: 0;
+}
+.home-about-section {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 .header2 {
     font-family: $sans;
     font-size: 30px;
     color: $dark;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
+    margin:  0;
+    padding: 0;
+}
+#home-margin {
+    margin-top: 25px;
 }
 .home-list {
     display: flex;
@@ -198,19 +206,7 @@
     }
 }
 
-@media only screen and (max-width: 1300px) {
-    .header-container {
-        width: 90%;
-    }
-}
-
 @media only screen and (max-width: 1150px) {
-    #home-logo {
-        width: 100px;
-        height: auto;
-        top: 25px;
-        left: 15px;
-    }
     .header {
         font-size: 35px;
     }
@@ -231,19 +227,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-    #home-logo {
-        height: 75px; 
-        width: 75px;
-    }
-    .header {
-        padding-left: 50px;
-    }
-    .home-header {
-        padding-left: 50px;
-    }
-    .home-header-row {
-        padding-left: 50px;
-    }
     .header {
         font-size: 30px;
     }
@@ -262,6 +245,17 @@
     .home-list2 li {
         font-size: 20px;
     }
+    .home-bottom-section {
+        flex-flow: column;
+        align-content: center;
+        align-items: center;
+    }
+    .home-about-section {
+        flex-flow: row;
+    }
+    #home-margin {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -271,18 +265,6 @@
 }
 
 @media only screen and (max-width: 750px) {
-    .header {
-        padding-left: 0;
-    }
-    .home-header {
-        padding-left: 0;
-    }
-    .home-reader-row {
-        padding-left: 0;
-    }
-    #home-logo {
-        display: none;
-    }
     .home-bottom-section {
         flex-flow: column;
         justify-content: center;
@@ -290,13 +272,9 @@
         align-items: center;
         align-content: center;
     }
-
 }
 
 @media only screen and (max-width: 600px) {
-    .header-container {
-        width: 95%;
-    }
     .header {
         font-size: 25px;
     }
@@ -317,15 +295,13 @@
     }
 }
 
-@media only screen and (max-width: 475px) {
-    .header-container {
-        width: 100%;
-        border-radius: 0;
-        padding: 0;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 120px;
+@media only screen and (max-width: 500px) {
+    .home-about-section {
+        flex-flow: column;
     }
+}
+
+@media only screen and (max-width: 475px) {
     .home-header-row {
         width: 300px;
         margin: 0 auto;
@@ -336,13 +312,9 @@
     .home-address-link {
         width: 275px;
     }
-    .home-button-row {
-        display: flex;
-        flex-flow: column;
-        margin-top: 10px;
-    }
     .home-contact-button {
         margin: 5px auto;
+        width: 150px;
     }
     .header {
         font-size: 22px;

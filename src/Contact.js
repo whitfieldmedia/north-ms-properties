@@ -1,5 +1,6 @@
 import React from 'react';
-import './assets/css/contact.css';
+import Gallery from './Gallery';
+import './assets/scss/contact.scss';
 
 class Contact extends React.Component {
     constructor() {
@@ -20,15 +21,15 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="contact-page">
-                <h1 className="contact-header"> Contact </h1>
                 <div className="contact-info">
-                    <p className="contact-text"> Donnie Sultan </p>
+                    <p className="contact-name"> Donnie Sultan </p>
                     <p className="contact-text">  (662) 417-2501 </p>
                     <p className="contact-text"> donnie@northmsproperties.com </p>
                     <p className="contact-par">
                         If you're interested in this property and want to view the property or if you have any questions. Give me a call or shoot me an email!
                     </p>
                 </div>
+                <Gallery />
             </div>
         )
     }

@@ -1,24 +1,26 @@
 @import 'assets';
 
 .contact-page {
-    margin: 100px 0 0 0;
+    margin: 100px auto 0 auto;
     padding: 0;
     display: flex;
     flex-flow: column;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    max-width: 900px;
+    min-width: 300px;
+    width: auto;
     height: auto;
     min-height: calc(100vh - 200px);
 }
 
 .contact-header {
-    font-family: $serif;
+    font-family: $serif2;
     font-size: 35px;
     color: $dark;
-    font-weight: 400;
+    font-weight: 500;
     width: auto;
     margin: 40px auto 0 auto;
     text-align: center;
@@ -27,12 +29,23 @@
     width: 80%;
     max-width: 1000px;
     min-width: 280px;
-    margin: 20px auto;
+    margin: 60px auto;
+}
+.contact-name {
+    font-family: $sans;
+    font-size: 30px;
+    color: $dark;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
 }
 .contact-par {
     font-family: $body;
     font-size: 22px;
     color: $dark;
+    text-align: center;
+    margin: 10px auto;
 }
 
 .contact-text {
@@ -42,108 +55,6 @@
     margin: 0;
     padding: 5px 0;
     text-align: center;
-}
-.contact-form {
-    width: 100%;
-    max-width: 800px;
-    min-width: 300px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-    margin: 25px auto 0 auto;
-}
-
-.contactRow {
-    width: 90%;
-    margin: 20px auto;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-    border-bottom: 1px solid $dark;
-}
-.contactRow:last-child {
-    border-bottom: none;
-}
-
-.contactColumn {
-    width: 40%;
-    min-width: 300px;
-    margin: 15px auto;
-    display: flex;
-    flex-direction: row;
-    align-content: initial;
-    align-items: initial;
-    border-bottom: 1px solid $dark;
-}
-
-.input {
-    width: 80%;
-    border: none;
-    height: 30px;
-    font-size: 15px;
-    background: inherit;
-    color: $dark;
-}
-input::placeholder {
-    color: $dark;
-}
-
-input:focus {
-    outline: none;
-}
-
-.form_label {
-    padding-top: 7px;
-    padding-right: 15px;
-    justify-self: baseline;
-    align-self: baseline;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    height: 20px;
-    width: auto;
-    color: $blue;
-}
-
-.message_row {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    justify-items: baseline;
-    align-content: baseline;
-    align-items: baseline;
-    border-bottom: 1px solid $dark;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.message_input {
-    width: 90%;
-    height: 30px;
-    font-size: 15px;
-    border: none;
-    background: inherit;
-    color: $dark
-}
-
-
-#form-button {
-    margin: 20px auto 50px auto;
-    height: 40px;
-    width: 200px;
-    font-size: 20px;
-    color: $white;
-    background-color: $blue;
-    border: 1px solid $white;
-    border-radius: 25px;
-}
-#form-button:hover {
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {

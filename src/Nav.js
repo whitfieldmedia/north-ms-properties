@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import './assets/css/nav.css';
+import logo from './assets/images/logo.svg';
+import './assets/scss/nav.scss';
 
 class Nav extends React.Component {
     constructor() {
@@ -70,7 +71,7 @@ class Nav extends React.Component {
                     <span id="span3"></span>
                     <span id="span4"></span>
                 </div>
-                    <Link onClick={this.handleMenuClick} to="/" className="nav-header"> North Ms Properties </Link>
+                    <Link onClick={this.handleMenuClick} to="/" className="nav-header"> <img src={logo} className="nav-logo" alt="North Ms Properties" /> </Link>
                     <ul className={this.state.isOpen ? "nav-link-container" : 'nav-link-closed'}>
                         <li className="nav-link-holder">
                             <Link onClick={this.handleMenuClick} to="/" className="nav-link"> Home </Link>
@@ -81,11 +82,11 @@ class Nav extends React.Component {
                         <li className="nav-link-holder">
                             <Link onClick={this.handleMenuClick} to="/description-of-property" className="nav-link"> Description </Link>
                         </li>
-                        <li ref="economic" className="nav-link-holder" onClick={this.handleClick}>
-                            <p className="nav-link"> Economic Profiles </p>
-                        </li>
                         <li className="nav-link-holder">
                             <Link onClick={this.handleMenuClick} to="/contact" className="nav-link"> Contact </Link>
+                        </li>
+                        <li ref="economic" className="nav-link-holder" onClick={this.handleClick}>
+                            <p className="nav-link"> Economic Profiles </p>
                         </li>
                     </ul>
                     <div className={this.state.dropdownOpen ? "nav-dropdown" : "nav-dropdown-closed"}>
