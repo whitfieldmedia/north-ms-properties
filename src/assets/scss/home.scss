@@ -16,17 +16,63 @@
     background: $white;
 }
 
+.header-container {
+    width: 80%;
+    max-width: 1200px;
+    min-width: 290px;
+    margin: 150px auto 15px auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 25px;
+    background: $dBlue;
+    position: relative;
+    border: 1px solid $white;
+}
+.home-header-row {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    justify-items: center;
+}
+#home-logo {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    top: 15px;
+    left: 25px;
+}
+
+
+.header {
+    font-family: $sans;
+    color: $white;
+    font-size: 40px;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+}
+
 .home-header {
     position: relative;
-    color: $darker;
-    font-family: $serif;
-    font-size: 40px;
+    color: $white;
+    font-family: $sans;
+    font-size: 30px;
     text-align: center;
-    padding: 120px 0 15px 0;
     margin: 0 auto;
     width: auto;
     z-index: 2;
-    font-weight: 700;
+    font-weight: 600;
+}
+
+.home-header2 {
+    font-family: $sans;
+    font-size: 30px;
+    color: $off;
+    margin: 0;
+    padding: 10px 20px;
 }
 
 #home-video {
@@ -44,7 +90,7 @@
 
 .home-address-link {
     font-family: $sans;
-    font-size: 25px;
+    font-size: 30px;
     color: $darker;
     text-decoration: none;
     text-align: center;
@@ -79,21 +125,102 @@
     border-radius: 25px;
     font-family: $sans;
     font-size: 20px;
-    color: $white;
+    color: $off;
     background: $dBlue;
     font-weight: 500;
     margin: 15px auto;
     transition: all .3s ease;
-    line-height: 20px;
     border: 1px solid $white;
+    line-height: 25px;
     i {
-        padding-left: 10px;
+        padding-left: 5px;
     }
 }
 .home-contact-button:hover {
     line-height: 20px;
     transform: scale(1.05);
     box-shadow: 1px 1px 5px rgba(93, 92, 97, .2);
+}
+
+.home-bottom-section {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding-bottom: 75px;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.home-bottom-column {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    margin: 0 15px;
+    padding: 0 15px;
+}
+.header2 {
+    font-family: $sans;
+    font-size: 30px;
+    color: $dark;
+    font-weight: 500;
+    text-align: center;
+}
+.home-list {
+    display: flex;
+    flex-flow: column;
+    list-style-type: circle;
+    li {
+        font-family: $sans;
+        font-size: 25px;
+        color: $dark;
+    }
+}
+
+.home-list2 {
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    list-style-type: circle;
+    li {
+        font-family: $sans;
+        font-size: 25px;
+        color: $dark;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .header-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #home-logo {
+        width: 100px;
+        height: auto;
+        top: 25px;
+        left: 15px;
+    }
+    .header {
+        font-size: 35px;
+    }
+    .home-header {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .home-header2 {
+        font-weight: 500;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -103,30 +230,111 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
-    .home-header {
-        font-size: 40px;
+@media only screen and (max-width: 900px) {
+    #home-logo {
+        height: 75px; 
+        width: 75px;
     }
+    .header {
+        padding-left: 50px;
+    }
+    .home-header {
+        padding-left: 50px;
+    }
+    .home-header-row {
+        padding-left: 50px;
+    }
+    .header {
+        font-size: 30px;
+    }
+    .home-header {
+        font-size: 25px;
+    }
+    .home-header2 {
+        font-size: 25px;
+    }
+    .header2 {
+        font-size: 25px;
+    }
+    .home-list li {
+        font-size: 20px;
+    }
+    .home-list2 li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     .home-address-link {
         font-size: 22px;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .home-header {
-        font-size: 35px;
+@media only screen and (max-width: 750px) {
+    .header {
+        padding-left: 0;
     }
-    .home-address-link {
+    .home-header {
+        padding-left: 0;
+    }
+    .home-reader-row {
+        padding-left: 0;
+    }
+    #home-logo {
+        display: none;
+    }
+    .home-bottom-section {
+        flex-flow: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .header-container {
+        width: 95%;
+    }
+    .header {
+        font-size: 25px;
+    }
+    .home-header2 {
         font-size: 20px;
+    }
+    .home-header {
+        font-size: 20px;
+    }
+    .header2 {
+        font-size: 20px;
+    }
+    .home-list li {
+        font-size: 18px;
+    }
+    .home-list2 li {
+        font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 475px) {
-    .home-header {
-        font-size: 30px;
+    .header-container {
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 120px;
+    }
+    .home-header-row {
+        width: 300px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        justify-items: space-evenly;
+        padding: 0;
     }
     .home-address-link {
-        width: 250px;
+        width: 275px;
     }
     .home-button-row {
         display: flex;
@@ -136,6 +344,16 @@
     .home-contact-button {
         margin: 5px auto;
     }
+    .header {
+        font-size: 22px;
+    }
+    .home-header {
+        font-size: 18px;
+    }
+    .home-header2 {
+        padding: 10px 0;
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -143,14 +361,19 @@
         width: 99vw;
         height: 56vw;
     }
-    .home-header {
-        font-size: 25px;
-        margin: 15px auto;
-    }
     .home-address-link {
         margin: 10px auto;
     }
     .home-contact-button {
         margin: 10px auto;
+    }
+    .header {
+        font-size: 20px;
+    }
+    .home-header {
+        font-size: 16px;
+    }
+    .home-header2 {
+        font-size: 18px;
     }
 }

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700|Maven+Pro:400,500|Oxygen|Playfair+Display:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alegreya:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Spectral:400,500,600,700&display=swap");
 .navbar-container {
   position: fixed;
   top: 0;
@@ -24,7 +26,7 @@
   padding: 0;
   width: 100vw;
   height: auto;
-  background: #3e3e3e;
+  background: #3a3a3a;
 }
 
 .nav-text {
@@ -126,7 +128,7 @@
 }
 
 .nav-link:hover {
-  color: #7395AE;
+  color: #65BBFD;
 }
 
 .nav-dropdown-closed {
@@ -189,7 +191,7 @@
 }
 
 .dropdown-link:hover {
-  color: #7395AE;
+  color: #65BBFD;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -383,6 +385,14 @@
 
   .nav-dropdown {
     right: 180px;
+  }
+
+  #ham-menu {
+    right: 15px;
+  }
+
+  .nav-clicker {
+    right: 10px;
   }
 }
 @media only screen and (max-width: 350px) {
