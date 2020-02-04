@@ -193,7 +193,7 @@ class Cost extends React.Component {
                 </table>
                 <div className="cost-price-row">
                     <h2 className="cost-header2"> Buy it now for </h2>
-                    <h2 className="cost-header3"> $1,350,000 </h2>
+                    <h2 className="cost-header3"> $900,000 </h2>
                 </div>
             </div>
         )

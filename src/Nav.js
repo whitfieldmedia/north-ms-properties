@@ -54,12 +54,12 @@ class Nav extends React.Component {
         return (
             <div className="navbar-container">
                 <div className="nav-top-row">
-                    <p className="nav-text"> <i className="fas fa-phone fa-xs"></i> (662) 417-2501  </p>
-                    <p className="nav-text"> <i className="fas fa-envelope fa-xs"></i> donnie@northmsproperties.com </p>
-                    <a href="tel:6624172501" className="nav-text-small"> 
+                    <p className="nav-text"> <i className="fas fa-phone fa-xs"></i> (662) 229-7003  </p>
+                    <p className="nav-text"> <i className="fas fa-envelope fa-xs"></i> chris@coltmor.com </p>
+                    <a href="tel:6622297003" className="nav-text-small"> 
                         <i className="fas fa-phone"></i> 
                     </a>
-                    <a href="mailto:donnie@northmsproperties.com" className="nav-text-small">
+                    <a href="mailto:chris@coltmor.com" className="nav-text-small">
                         <i className="fas fa-envelope"></i>
                     </a>
                 </div>

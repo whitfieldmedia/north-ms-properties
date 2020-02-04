@@ -20,12 +20,12 @@ class Home extends React.Component {
                         Formerly certified assisted living facility
                     </h2>
                     <div className="home-header-row">
-                        <h2 className="home-header2"> $1,350,000 </h2>
+                        <h2 className="home-header2"> $900,000 </h2>
                         <h2 className="home-header2"> 57.85 acres </h2>
                     </div>
                 </div>
                 <iframe id="home-video" title="27473 Hwy 82 W McCarley" src="https://player.vimeo.com/video/363561281" width="640" height="360" frameBorder="0" allowFullScreen></iframe>
-                <a href="tel:6624172501" className="home-address-link">  (662) 417-2501 </a>
+                <a href="tel:6622297003" className="home-address-link">  (662) 229-7003 </a>
                 <a href="https://www.google.com/maps/place/Hwy+82,+Mississippi/@33.4717752,-89.7971302,17z/data=!3m1!4b1!4m5!3m4!1s0x8881c247f96c51a1:0x2986886cfcc6b72e!8m2!3d33.4717707!4d-89.7949415" target="_blank" rel="noopener noreferrer" className="home-address-link">
                     27473 Highway 82 West, McCarley, Ms, 38943
                 </a>

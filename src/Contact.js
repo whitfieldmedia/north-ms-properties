@@ -22,9 +22,9 @@ class Contact extends React.Component {
         return (
             <div className="contact-page">
                 <div className="contact-info">
-                    <p className="contact-name"> Donnie Sultan </p>
-                    <p className="contact-text">  (662) 417-2501 </p>
-                    <p className="contact-text"> donnie@northmsproperties.com </p>
+                    <p className="contact-name"> Chris Reed </p>
+                    <p className="contact-text">  (662) 229-7003 </p>
+                    <p className="contact-text"> chris@coltmor.com </p>
                     <p className="contact-par">
                         If you're interested in this property and want to view the property or if you have any questions. Give me a call or shoot me an email!
                     </p>
